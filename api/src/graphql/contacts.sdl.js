@@ -8,8 +8,8 @@ export const schema = gql`
   }
 
   type Query {
-    contacts: [Contact!]! @requireAuth
-    contact(id: Int!): Contact @requireAuth
+    contacts: [Contact!]! @skipAuth
+    contact(id: Int!): Contact @skipAuth
   }
 
   input CreateContactInput {
@@ -25,7 +25,7 @@ export const schema = gql`
   }
 
   type Mutation {
-    createContact(input: CreateContactInput!): Contact! @requireAuth
+    createContact(input: CreateContactInput!): Contact! @skipAuth
     updateContact(id: Int!, input: UpdateContactInput!): Contact! @requireAuth
     deleteContact(id: Int!): Contact! @requireAuth
   }

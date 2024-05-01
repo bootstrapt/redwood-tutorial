@@ -7,20 +7,27 @@ Features:
 - Blog posting, editing, and deleting with Role Based Access Control (RBAC)
 - Basic commenting system with RBAC moderation
 - Basic access control: login, signup, and logout
-- Contact page
+- Contact us form
+- User input validation
 
-Improvements to the standard tutorial:
+Improvements made to the standard tutorial:
 - added admin role to moderator delete comment function
 - added corresponding storybook views and test coverage
+- fixed permission on contact us form graphql so anon user can contact
 - all tests pass
 
 Improvements needed:
 - add name to signup form
+- add email sending
+- add input validation message to comments
 - complete test coverage: add adminPosts
 - don't show ellipsis on summary if body length < 100
 - account management
 - user management (admin only)
 - contact us form response view (admin only)
+
+Known issues:
+- check graphql permissions on contacts
 
 Notes:
 - comments tests fail after db migration `add userId to post` in chap 7 accessing current user, leading to the fixes to scenarios mentioned above
