@@ -21,6 +21,12 @@ Improvements needed:
 - user management (admin only)
 - contact us form response view (admin only)
 
+Notes:
+- comments tests fail after db migration `add userId to post`
+- `web/src/components/Post/EditPostCell/EditPostCell.js` did not have the function `EditPostById`, it also does not appear in their [repo](https://github.com/redwoodjs/redwood-tutorial/blob/4f17151f7fffb03593f9451bf5e307676e569b3c/web/src/components/Post/EditPostCell/EditPostCell.js#L7)
+- added missing user-related fields to scenarios and tests, see commit history
+- Redwood mentions you can update but kept it at same version for tutorial
+
 ## Setup
 
 The [tutorial itself](https://redwoodjs.com/docs/tutorial/chapter1/prerequisites) contains instructions for getting this repo up and running, but here is a summary of the commands:
