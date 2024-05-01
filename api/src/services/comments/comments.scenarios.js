@@ -8,6 +8,14 @@ export const standard = defineScenario({
           create: {
             title: 'Redwood Leaves',
             body: 'The quick brown fox jumped over the lazy dog.',
+            user: {
+              create: {
+                name: 'John Doe',
+                email: 'john@example.com',
+                hashedPassword: 'dummyHashedPassword123',
+                salt: 'dummysalt',
+              },
+            },
           },
         },
       },
@@ -20,6 +28,11 @@ export const standard = defineScenario({
           create: {
             title: 'Root Systems',
             body: 'The five boxing wizards jump quickly.',
+            user: {
+              connect: {
+                email: 'john@example.com',
+              },
+            },
           },
         },
       },

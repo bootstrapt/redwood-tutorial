@@ -15,7 +15,15 @@ describe('posts', () => {
 
   scenario('creates a post', async () => {
     const result = await createPost({
-      input: { title: 'String', body: 'String' },
+      input: {
+        title: 'String',
+        body: 'String',
+        user: {
+          connect: {
+            email: 'john@example.com',
+          },
+        },
+      },
     })
 
     expect(result.title).toEqual('String')
