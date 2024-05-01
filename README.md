@@ -20,9 +20,10 @@ Improvements needed:
 - add name to signup form
 - add email sending
 - add input validation message to comments
+- add account management page
 - complete test coverage: add adminPosts
 - don't show ellipsis on summary if body length < 100
-- account management
+- check rbac issue with seeded admin viewing admin routes
 - user management (admin only)
 - contact us form response view (admin only)
 
