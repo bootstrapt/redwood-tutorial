@@ -1,6 +1,6 @@
 # Redwood Tutorial App
 
-This is my implementation of the Redwood Tutorial App.
+This is my implementation of the Redwood Tutorial App. It's a pretty full featured blog but it's missing a little depth in some areas. Below I highlight the features, improvements I made, and highlighted a few things missing and noted some rough areas.
 
 Features:
 - Blog feed and article views
@@ -27,7 +27,7 @@ Notes:
 - chap 7 RBAC has PrivateSet but my code has Private, as does their github [repo](https://github.com/redwoodjs/redwood-tutorial/blob/4f17151f7fffb03593f9451bf5e307676e569b3c/web/src/Routes.jsx#L24)
 - `web/src/components/Post/EditPostCell/EditPostCell.js` did not have the function `EditPostById`, it also does not appear in their [repo](https://github.com/redwoodjs/redwood-tutorial/blob/4f17151f7fffb03593f9451bf5e307676e569b3c/web/src/components/Post/EditPostCell/EditPostCell.js#L7)
 - added missing user-related fields to scenarios and tests, see commit history
-- Redwood mentions you can update but kept it at same version for tutorial
+- Redwood CLI mentions you can update but kept it at same version for tutorial
 
 ## Setup
 
