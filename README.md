@@ -15,6 +15,7 @@ Improvements to the standard tutorial:
 - all tests pass
 
 Improvements needed:
+- add name to signup form
 - complete test coverage: add adminPosts
 - don't show ellipsis on summary if body length < 100
 - account management
@@ -38,4 +39,15 @@ yarn install
 yarn rw prisma migrate dev
 yarn rw prisma db seed
 yarn rw dev
+```
+
+Resetting dev database:
+```bash
+yarn rw prisma migrate reset
+```
+
+Adding admin user role:
+```bash
+yarn rw c
+> db.user.update({ where: { id: 1 } , data: { roles: 'admin' } })
 ```
