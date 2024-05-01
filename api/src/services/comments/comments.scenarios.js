@@ -46,6 +46,14 @@ export const postOnly = defineScenario({
       data: {
         title: 'Bark',
         body: "A tree's bark is worse than its bite",
+        user: {
+          create: {
+            name: 'John Doe',
+            email: 'john@example.com',
+            hashedPassword: 'dummyHashedPassword123',
+            salt: 'dummysalt',
+          },
+        },
       },
     },
   },
