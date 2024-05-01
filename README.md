@@ -26,9 +26,6 @@ Improvements needed:
 - user management (admin only)
 - contact us form response view (admin only)
 
-Known issues:
-- check graphql permissions on contacts
-
 Notes:
 - comments tests fail after db migration `add userId to post` in chap 7 accessing current user, leading to the fixes to scenarios mentioned above
 - chap 7 RBAC has PrivateSet but my code has Private, as does their github [repo](https://github.com/redwoodjs/redwood-tutorial/blob/4f17151f7fffb03593f9451bf5e307676e569b3c/web/src/Routes.jsx#L24)
